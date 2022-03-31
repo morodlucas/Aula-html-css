@@ -1,0 +1,38 @@
+/* reset de css -> busca zerar os padrões iniciais do computador, usando o seletor */
+
+* {
+    margin: 0;
+}
+
+/* declaração de variável -> sempre em inglês */
+:root {
+    --bg-gray: rgb(77, 77, 77);
+}
+
+
+.container {
+    /* vh somente em altura, % somente em comprimento */
+    width: 100%;
+    height: 100vh;
+    /* dar o caminho p css saber onde estão as imagens */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bg-image-1 {
+    background-image: url(../images/pexels-caio-67112.jpg);
+}
+
+.bg-image-2 {
+    background-image: url(../images/pexels-photomix-company-230544.jpg);
+}
+
+.bg-image-3 {
+    background-image: url(../images/pexels-tranmautritam-251225.jpg);
+}
+
+.bg-color-1 {
+    background-color: var(--bg-gray);
+}
