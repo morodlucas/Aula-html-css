@@ -1,0 +1,49 @@
+<!-- http://getbem.com/introduction/ mostra padrões de código de css -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto XPTO</title>
+
+    <!-- chamda do google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+    <!-- link do css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <!-- o header é a mesma coisa que uma div normal, só muda a semântica -->
+    <header class="header-page">
+        <h1 class="header-title">Projeto <span class="logo">XPTO</span></h1>
+        <!-- essas class criadas servem pra organizar o código, a pessoa bate o olho e já sabe o que é cada cosia -->
+
+        <!-- (nav>ul>li*4>a{link}) pra fazer o que está aqui embaixo -->
+        <!-- isso é uma lista em tópicos de links, o nav é mais uma div semântica normal -->
+        <!-- o ul faz uma lista não ordenada - sem números -->
+        <nav class="header-nav">
+            <ul>
+                <li><a href="">link</a></li>
+                <li><a href="">link</a></li>
+                <li><a href="">link</a></li>
+                <li><a href="">link</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <!-- Container 01 (.container)-->
+    <div class="container bg-image-1"></div>
+    <div class="container bg-color-1"></div>
+    <div class="container bg-image-2"></div>
+    <div class="container bg-color-1"></div>
+    <div class="container bg-image-3"></div>
+
+</body>
+
+</html>
