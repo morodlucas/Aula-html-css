@@ -3,6 +3,7 @@
 
 body{
     font-family: 'Ubuntu', sans-serif;
+    background-color: bisque;
 }
 
 h1, h2{
@@ -27,6 +28,7 @@ div{
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
+    border-radius: 7px;
 }
 
 img{
@@ -39,7 +41,6 @@ h1{
 
 a{
     text-decoration: none;
-    border: 1px solid red;
     color: seagreen;
     padding: 5px;
     /* pode colocar backgroundcolor*/
