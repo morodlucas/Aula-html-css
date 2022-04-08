@@ -23,6 +23,7 @@ ul, ol{
 
 a{
     text-decoration: none;
+    font-weight: 1000;
 }
 
 .header-page{
@@ -72,6 +73,10 @@ a{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+}
+
+.tiktok{
+    max-width: 15px;
 }
 
 .bg-image-1 {
