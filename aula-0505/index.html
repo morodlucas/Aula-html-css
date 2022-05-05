@@ -1,0 +1,110 @@
+<!-- http://getbem.com/introduction/ mostra padrões de código de css -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto XPTO</title>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- chamada do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <!-- linkando a CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+
+</head>
+<body>
+    <!-- o header é a mesma coisa que uma div normal, só muda a semântica -->
+    <header class="header-page">
+        <h1 class="header-title">Projeto <span class="logo">XPTO</span></h1>       
+        <!-- essas class criadas servem pra organizar o código, a pessoa bate o olho e já sabe o que é cada cosia -->
+
+        <!-- (nav>ul>li*4>a{link}) pra fazer o que está aqui embaixo -->
+        <!-- isso é uma lista em tópicos de links, o nav é mais uma div semântica normal -->
+        <!-- o ul faz uma lista não ordenada - sem números -->     
+        <nav class="header-nav">
+            <ul>
+                <li><a href="">Tiktok <i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="">Facebook <i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="">LinkedIn <i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="">Youtube <i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- container 01 (.container) -->
+    
+    <!-- hero -->
+    <div class="container bg-image-1 hero">
+        <h2 class="hero-title">Criamos soluções tecnológicas</h2>
+        <p class="hero-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate fuga est voluptatum quidem excepturi eius.
+        </p>
+        <a href="" class="btn">Mais informações <i class="fa-solid fa-gear gear"></i></a>        
+    </div>
+    <!-- fim hero -->
+
+
+    <!-- cards -->
+    <div class="container bg-color-1 cards">
+        
+        <div class="card-item">
+            <i class="fa-solid fa-robot icon"></i>
+            <h2 class="card-title">IOT</h2>
+            <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laboriosam sequi vel. Consectetur, dignissimos ullam?
+            </p>
+            <a href="" class="btn btn-small">Leia Mais</a>
+        </div>
+
+        <div class="card-item">
+            <i class="fa-solid fa-brain icon"></i>
+            <h2 class="card-title">IA</h2>
+            <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laboriosam sequi vel. Consectetur, dignissimos ullam?
+            </p>
+            <a href="" class="btn btn-small">Leia Mais</a>
+        </div>
+
+        <div class="card-item">
+            <i class="fa-solid fa-network-wired icon"></i>
+            <h2 class="card-title">WEB</h2>
+            <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laboriosam sequi vel. Consectetur, dignissimos ullam?
+            </p>
+            <a href="" class="btn btn-small">Leia Mais</a>
+        </div>
+        
+        
+    </div>
+    <!-- fim cards -->
+
+
+    <!-- solution -->
+    <div class="container bg-image-3 solution">        
+        
+        <h2 class="solution-title">Criamos soluções para
+            <span class="solution-span"></span>
+        </h2>
+        <p class="solution-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere aliquid tempore explicabo officiis repellendus, odio sapiente deserunt maxime ex! Tempore architecto similique optio recusandae aperiam. Odit culpa saepe totam delectus!
+        </p>
+        <a href="" class="btn btn-small">Conheça nossas soluções <i class="fa-solid fa-gear gear"></i></a>
+
+    </div>
+    <!-- fim solution -->
+
+
+
+
+    <div class="container bg-color-1"></div>
+    <div class="container bg-image-2"></div>
+    
+</body>
+</html>

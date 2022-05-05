@@ -1,0 +1,266 @@
+/* reset css
+zerar padrões iniciais do navegador
+usamos o seletor asterisco(*) par aplicar o reset
+*/
+/* todo reset deve ter essas categorias */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+/* declaração de variaveis -> sempre em inglês*/
+:root {
+    --bg-dark: #000;
+    --color-pink: #dc143c;
+    --color-light: #fff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+ul, ol {
+    /* tira os pontos da lista */
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-light)
+}
+
+.container {
+    /* vh somente em altura, % somente em comprimento */
+    width: 100%;
+    height: 100vh;
+    /* dar o caminho p css saber onde estão as imagens */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/************************ header ************************/
+.header-page{
+    width: 100%;
+    height: 80px;
+    /* flex posiciona o conteúdo */
+    /* dá pra escolher pra que lugar o flex vai ser aplicado */
+    display: flex;
+    /* alinhamento vertical */
+    align-items: center;
+    /* alinhamento horizonal */
+    justify-content: space-between;
+    padding: 0 15px;
+    
+    position: absolute;
+}
+
+.header-title {
+    font-size: 40px;  
+    color: var(--color-light);  
+}
+
+.logo {
+    color: var(--color-pink);
+}
+
+.header-nav ul {
+    display: flex;
+}
+
+.header-nav li {
+    margin: 0 15px;
+}
+
+.header-nav a {    
+    font-size: 15px;
+    transition: .5s;
+}
+
+.header-nav a:hover {
+    color: var(--color-pink);
+}
+/************************ fim header *******************/
+
+/************************ hero *******************/
+.hero {
+    color: var(--color-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    font-size: 17px;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.btn {
+    border: 1px solid var(--color-pink);
+    background-color: var(--color-pink);
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 70px;
+    font-weight: 700;
+    transition: .7s;
+}
+
+.btn-small {
+    font-size: 16px;
+    padding: 7px 30px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border-color: var(--color-light);
+}
+
+
+.gear{
+    margin-left: 7px;
+    animation: gear 1s infinite linear;
+
+}
+
+@keyframes gear {
+    to{
+        transform: rotate(120deg);
+    }
+}
+/************************ fim hero *******************/
+
+/************************ cards *******************/
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card-item {
+    width: 30%;
+    height: 500px;
+    border: 1px solid var(--color-pink);
+    border-radius: 7px; 
+    color: var(--color-light); 
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.icon {
+    font-size: 45px;
+    color: var(--color-pink);
+    transition: .5s;
+}
+
+.icon:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+
+.card-title {
+    font-size: 40px;
+    margin: 30px 0;
+}
+
+.card-text {
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+/************************ fim cards *******************/
+
+/************************ solution ***********************/
+.solution {
+    color: var(--color-light);
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.solution-title {
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.solution-text {
+    width: 60%;
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 34px;
+}
+
+.solution-span {
+    display: block;    
+}
+
+.solution-span::after {
+    content: 'Agronegócio';
+    color: var(--color-pink);
+    animation: solution 5s infinite;
+}
+
+@keyframes solution {
+    
+    25% {
+        content: 'Educação';        
+    }
+
+    50% {
+        content: 'Saúde';
+    }
+
+    75% {
+        content: 'Transporte';
+    }
+}
+
+
+
+
+
+
+/************************ fim solution *******************/
+
+
+
+.bg-image-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0 , 0)),
+    url(../images/pexels-monoar-rahman-109371.jpg);
+}
+
+.bg-image-2 {
+    background-image: url(../images/pexels-expect-best-246684.jpg);
+}
+
+.bg-image-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0 , 0)),
+    url(../images/pexels-negative-space-34140.jpg);
+}
+
+.bg-color-1 {
+    background-color: var(--bg-dark);
+}
+
+
+
+
+
