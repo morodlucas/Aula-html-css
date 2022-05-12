@@ -33,8 +33,9 @@ a {
 
 .container {
     /* vh somente em altura, % somente em comprimento */
+    /* altura de container somente em min-height */
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     /* dar o caminho p css saber onde estão as imagens */
     background-repeat: no-repeat;
     background-size: cover;
@@ -241,6 +242,37 @@ a {
 /************************ fim solution *******************/
 
 
+/************************ gallery ************************/
+
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.gallery-item{
+    width: 30%;
+    background-color: var(--color-light);
+    padding: 10px 10px 20px 10px;
+    margin: 20px 0;
+}
+
+.gallery-item img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.gallery-item figcaption{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/************************ fim gallery ************************/
+
+
 
 .bg-image-1 {
     background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0 , 0)),
@@ -259,8 +291,5 @@ a {
 .bg-color-1 {
     background-color: var(--bg-dark);
 }
-
-
-
 
 
