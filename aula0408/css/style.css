@@ -1,0 +1,10 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.bg-blue{
+    background-color: blue;
+}
+.textblue{
+    color: lightblue;
+}
