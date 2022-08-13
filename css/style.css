@@ -1,0 +1,13 @@
+.text-purple{
+    color:#83498D
+}
+
+.bg-gradient-purple{
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 18%, rgba(36, 0, 69, 1) 56%, rgba(0, 0, 0, 1) 100%);
+}
+
+.bg-gradient-cards{
+    background: rgb(2, 0, 36);
+    background: linear-gradient(306deg, rgba(2, 0, 36, 1) 18%, rgba(36, 0, 69, 1) 60%);
+}
