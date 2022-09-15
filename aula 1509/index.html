@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Tabela e JS</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1>Tabela e JS</h1>
+
+        <!-- criando a tabela -->
+
+        <table class="table table-bordered table-hover text-center">
+            <!-- cabeçalho da tabela -->
+            
+            <thead class="table-dark">
+                <!-- linha da tabela -->
+
+                <tr>
+                    <th>Nome do herói</th>
+                    <th>Velocidade</th>
+                    <th>Agilidade</th>
+                    <th>Força</th>
+                    <th>XP Final</th>
+                </tr>
+
+            </thead>
+            
+            <!-- fim cabeçalho da tabela -->
+
+            <!-- corpo da tabela (dados) -->
+            
+            <tbody id="herois">
+
+                <!-- 1o herói -->
+                
+                <tr id="heroiUm" class="heroi">
+                    <td class="nome">Herói 1</td>
+                    <td class="velocidade">98</td>
+                    <td class="agilidade">95</td>
+                    <td class="forca">93</td>
+                    <td class="xp">0</td>
+                </tr>
+
+                <!-- fim 1o herói -->
+
+                <!-- 2o herói -->
+                
+                <tr id="heroiDois" class="heroi">
+                    <td class="nome">Herói 2</td>
+                    <td class="velocidade">58</td>
+                    <td class="agilidade">85</td>
+                    <td class="forca">73</td>
+                    <td class="xp">0</td>
+                </tr>
+
+                <!-- fim 2o herói -->
+
+                <!-- 3o herói -->
+                
+                <tr id="heroiTres" class="heroi">
+                    <td class="nome">Herói 3</td>
+                    <td class="velocidade">77</td>
+                    <td class="agilidade">88</td>
+                    <td class="forca">22</td>
+                    <td class="xp">0</td>
+                </tr>
+
+                <!-- fim 3o herói -->
+
+                <!-- 4o herói -->
+                
+                <tr id="heroiQuatro" class="heroi">
+                    <td class="nome">Herói 4</td>
+                    <td class="velocidade">12</td>
+                    <td class="agilidade">100</td>
+                    <td class="forca">65</td>
+                    <td class="xp">0</td>
+                </tr>
+
+                <!-- fim 4o herói -->
+
+                <!-- 5o herói -->
+                
+                <tr id="heroiCinco" class="heroi">
+                    <td class="nome">Herói 5</td>
+                    <td class="velocidade">2</td>
+                    <td class="agilidade">100</td>
+                    <td class="forca">100</td>
+                    <td class="xp">0</td>
+                </tr>
+
+                <!-- fim 5o herói -->
+            </tbody>
+
+            <!-- rodapé da tabela -->
+
+            <tfoot>
+                <tr>
+                    <td>Dados atualizados em 15/09/2022</td>
+                </tr>
+                <tr>
+                    <td><button class="btn btn-dark">Calcular XP</button></td>
+                </tr>
+            </tfoot>
+            
+            <!-- fim rodapé da tabela -->
+            
+            <!-- fim corpo da tabela (dados) -->
+        </table>
+
+
+    </div>
+
+    <!-- com o DOM, pode-se alterar tudo na página -->
+    <script src="./js/dom.js"></script>
+
+
+</body>
+</html>
