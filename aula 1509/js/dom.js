@@ -15,3 +15,11 @@ const getClass2 = document.querySelectorAll('.nome');
 console.log(getClass2);
 console.log(getClass2[3]);
 console.log(getClass2[3].textContent);
+getClass2[3].textContent = 'abcd';
+console.log(getClass2[3].innerHTML);
+
+//pegar pela tag
+const getTag1 = document.getElementsByTagName('th');
+console.log(getTag1);
+
+const getTag2 = document.getElementsByTagName('td');
